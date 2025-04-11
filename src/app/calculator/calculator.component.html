@@ -1,0 +1,11 @@
+<div class="calculator-wrapper">
+  <div class="calculator">
+    <input class="display" [(ngModel)]="display" disabled />
+
+    <div class="buttons">
+      <button *ngFor="let btn of buttons" (click)="press(btn)">{{ btn }}</button>
+      <button class="clear" (click)="clear()">C</button>
+      <button class="equals" (click)="calculate()">=</button>
+    </div>
+  </div>
+</div>

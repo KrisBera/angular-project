@@ -11,8 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class CalculatorComponent {
   display = '';
-  buttons = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', '.', '+'];
-
+  // buttons = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', '.', '+'];
+  buttons = ['1', '2', '3', '/', '4', '5', '6', '*', '7', '8', '9', '-', '0', '.', '+'];
   press(value: string) {
     this.display += value;
   }

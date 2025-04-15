@@ -56,10 +56,12 @@ button {
 /* Hover/active effects */
 button:hover {
   background: rgba(255, 255, 255, 0.35);
+  /* transform: translateY(-5px); */
 }
 
 button:active {
   transform: scale(0.95);
+  
 }
 
 /* Special buttons */
@@ -71,4 +73,10 @@ button.clear {
 button.equals {
   background-color: #2ecc71;
   grid-column: span 2;
+}
+button.clear:hover {
+  background-color: #c0392b;
+}
+button.equals:hover {
+  background-color: #27ae60;
 }
